@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta charset="UTF-8">	
+	<title> Responsive Portfolio Page </title>
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<section class="banner" id="sec">
+		<header>
+			<a href="#" class="logo">Logo</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+<div class="content">
+			<h2>Hello World,<br>I'm<span> Malik Krijestorac</span> </h2>
+			<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dicta magnam in modi consequatur molestias culpa sit doloremque incidunt excepturi tenetur praesentium recusandae esse, quibusdam labore ipsum, hic adipisci iste!</p>
+			<img width="100%" src="https://visualcocaine.org/public/uploads/large/314972546334xznea9dppycgope5od3lqrjwgi22lwn1okzzy7likwaypce8uuz7qvs2j0thzlna8euhu5nmvnkioerxyvgwk3cdrr5a5bo7xtw.jpg">
+		</div>
+	</section>
+	
+	<div id="navigation">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="index.html">Portfolio</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+	function toggle(){
+		var sec = document.getElementById('sec');
+		var nav = document.getElementById('navigation');
+		sec.classList.toggle('active');
+		nav.classList.toggle('active');
+	}
+	function togglePopup(){
+		document.getElementById("popup-1").classList.toggle("active");
+	}
+</script>
+</body>
+</html>
